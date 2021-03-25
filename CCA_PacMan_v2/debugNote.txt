@@ -1,0 +1,14 @@
+當主角.right == true:
+    當 (上一次tick時，可以向右走，但現在不行):
+        是否已轉彎←true;
+    反之:
+        是否已轉彎←false;
+    上次tick時是否可以向右走更新。
+
+當已轉彎:
+    當主角.right == true且上一次tick時不可以向右走:
+        主角.right←false;
+    是否已轉彎←false;
+
+
+
